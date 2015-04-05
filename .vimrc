@@ -23,3 +23,5 @@ let mapleader=","
 "Plugin alias
 "NerdTree
 nmap <silent> <leader>nt :NERDTreeToggle<CR>
+"Tagbar
+nmap <silent> <leader>tb :TagbarToggle<CR>
