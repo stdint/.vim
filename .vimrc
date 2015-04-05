@@ -16,3 +16,10 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 autocmd FileType make setlocal noexpandtab
+
+"Alias
+let mapleader=","
+
+"Plugin alias
+"NerdTree
+nmap <silent> <leader>nt :NERDTreeToggle<CR>
