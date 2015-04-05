@@ -19,6 +19,9 @@ autocmd FileType make setlocal noexpandtab
 
 "Alias
 let mapleader=","
+"Shortcut to edit .vimrc
+nmap <silent> <leader>ev :e ~/.vim/.vimrc<CR>
+nmap <silent> <leader>sv :source ~/.vim/.vimrc<CR>
 
 "Plugin alias
 "NerdTree
