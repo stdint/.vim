@@ -32,3 +32,5 @@ let g:CommandTInputDebounce=200
 nmap <silent> <leader>nt :NERDTreeToggle<CR>
 "Tagbar
 nmap <silent> <leader>tb :TagbarToggle<CR>
+"vim-notes
+nmap <silent> <leader>N :Note<CR>
