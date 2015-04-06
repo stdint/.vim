@@ -23,6 +23,10 @@ let mapleader=","
 nmap <silent> <leader>ev :e ~/.vim/.vimrc<CR>
 nmap <silent> <leader>sv :source ~/.vim/.vimrc<CR>
 
+"Plugin settings
+let g:CommandTMaxHeight=10
+let g:CommandTInputDebounce=200
+
 "Plugin alias
 "NerdTree
 nmap <silent> <leader>nt :NERDTreeToggle<CR>
