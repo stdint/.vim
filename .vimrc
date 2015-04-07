@@ -30,6 +30,7 @@ let g:CommandTInputDebounce=200
 "Plugin alias
 "NerdTree
 nmap <silent> <leader>nt :NERDTreeToggle<CR>
+nmap <silent> <leader>nf :NERDTreeFind<CR>
 "Tagbar
 nmap <silent> <leader>tb :TagbarToggle<CR>
 "vim-notes
