@@ -17,6 +17,9 @@ set tabstop=2
 set shiftwidth=2
 autocmd FileType make setlocal noexpandtab
 
+"Commands
+command W wa
+
 "Alias
 let mapleader=","
 "Shortcut to edit .vimrc
