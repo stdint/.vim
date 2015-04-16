@@ -9,6 +9,7 @@ set wildmenu
 set background=dark
 set ruler
 set number
+set hlsearch
 
 "Indentation settings
 set copyindent
