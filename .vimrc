@@ -10,6 +10,7 @@ set background=dark
 set ruler
 set number
 set hlsearch
+set cursorline
 
 "Indentation settings
 set copyindent
