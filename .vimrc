@@ -10,7 +10,10 @@ set background=dark
 set ruler
 set number
 set hlsearch
+set ignorecase
+set smartcase
 set cursorline
+highlight LineNr ctermfg=grey
 
 "Indentation settings
 set copyindent
