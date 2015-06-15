@@ -27,6 +27,8 @@ command W wa
 
 "Alias
 let mapleader=","
+"Shortcut to go to next tab
+nnoremap <silent> <tab> :tabNext<CR>
 "Shortcut to edit .vimrc
 nnoremap <silent> <leader>ev :e ~/.vim/.vimrc<CR>
 nnoremap <silent> <leader>sv :source ~/.vim/.vimrc<CR>
