@@ -24,6 +24,7 @@ autocmd FileType make setlocal noexpandtab
 
 "Commands
 command W wa
+command Q q
 
 "Alias
 let mapleader=","
