@@ -4,16 +4,25 @@ filetype plugin indent on
 "General settings
 syntax on
 set nocompatible
+set noswapfile
 set hidden
 set wildmenu
 set background=dark
 set ruler
 set number
 set hlsearch
+set incsearch
 set ignorecase
 set smartcase
 set cursorline
 highlight LineNr ctermfg=grey
+
+"Beeping
+set noeb
+set vb
+
+"Enable mouse use in all modes
+set mouse=a
 
 "Indentation settings
 set copyindent
@@ -21,6 +30,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 autocmd FileType make setlocal noexpandtab
+autocmd FileType python setlocal noexpandtab
 
 "Commands
 command W wa
