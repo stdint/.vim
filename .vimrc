@@ -29,6 +29,7 @@ set copyindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set backspace=indent,eol,start
 autocmd FileType make setlocal noexpandtab
 autocmd FileType python setlocal noexpandtab
 
