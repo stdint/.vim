@@ -58,6 +58,10 @@ nnoremap <silent> <s-tab> :tabNext<CR>
 nnoremap <silent> <leader>ev :e ~/.vim/.vimrc<CR>
 nnoremap <silent> <leader>sv :source ~/.vim/.vimrc<CR>
 
+"Insert mode map
+inoremap <silent> - _
+inoremap <silent> _ -
+
 "Plugin settings
 let g:CommandTMaxHeight=10
 let g:CommandTInputDebounce=200
