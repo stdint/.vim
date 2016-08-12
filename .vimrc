@@ -9,6 +9,7 @@ set hidden
 set wildmenu
 set background=dark
 set ruler
+set nonumber
 set relativenumber
 set hlsearch
 set incsearch
@@ -21,8 +22,10 @@ highlight LineNr ctermfg=grey
 function! ToggleNumber()
   if(&relativenumber == 1)
     set norelativenumber
+    set number
   else
     set relativenumber
+    set nonumber
   endif
 endfunc
 nnoremap <C-n> :call ToggleNumber()<cr>
