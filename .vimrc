@@ -9,13 +9,23 @@ set hidden
 set wildmenu
 set background=dark
 set ruler
-set number
+set relativenumber
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
 set cursorline
 highlight LineNr ctermfg=grey
+
+"Toggle relative number
+function! ToggleNumber()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+nnoremap <C-n> :call ToggleNumber()<cr>
 
 "Beeping
 set noeb
@@ -31,7 +41,6 @@ set tabstop=2
 set shiftwidth=2
 set backspace=indent,eol,start
 autocmd FileType make setlocal noexpandtab
-autocmd FileType python setlocal noexpandtab
 
 "Commands
 command W wa
