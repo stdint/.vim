@@ -18,6 +18,23 @@ set smartcase
 set cursorline
 highlight LineNr ctermfg=grey
 
+"Toggle white space characters
+function! ToggleWhiteSpaceChars()
+  if !exists("g:SeeWhiteSpace")
+    let g:SeeWhiteSpace=1
+  endif
+  if g:SeeWhiteSpace==0
+    set listchars=
+    let g:SeeWhiteSpace=1
+  else
+    set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+    let g:SeeWhiteSpace=0
+  endif
+  set list
+endfunc
+nnoremap <silent> <C-w> :call ToggleWhiteSpaceChars()<cr>
+execute ToggleWhiteSpaceChars()
+
 "Toggle relative number
 function! ToggleNumber()
   if(&relativenumber == 1)
