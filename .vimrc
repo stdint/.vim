@@ -51,6 +51,8 @@ command Q q
 
 "Alias
 let mapleader=","
+nnoremap ; :
+nnoremap : ;
 "Shortcut to go to next tab
 nnoremap <silent> <tab> :tabnext<CR>
 nnoremap <silent> <s-tab> :tabNext<CR>
