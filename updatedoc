@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+ls bundle | sed 's/^/_ /' > README.md

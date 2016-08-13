@@ -1,12 +1,9 @@
-# .vim
-My vim settings.
-
-## Plugins
-- NERDTree
-- NERDCommenter
-- tagbar
-- delimitMate
-- vim-misc
-- vim-notes
-- ctrl-p
-- surround.vim
+_ ctrlp
+_ delimitMate
+_ nerdcommenter
+_ nerdtree
+_ tagbar
+_ vim-airline
+_ vim-misc
+_ vim-notes
+_ vim-surround
