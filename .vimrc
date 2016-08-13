@@ -19,33 +19,26 @@ set cursorline
 highlight LineNr ctermfg=grey
 
 "Toggle white space characters
+set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
 function! ToggleWhiteSpaceChars()
-  if !exists("g:SeeWhiteSpace")
-    let g:SeeWhiteSpace=1
-  endif
-  if g:SeeWhiteSpace==0
-    set listchars=
-    let g:SeeWhiteSpace=1
+  if &list == 1
+    set nolist
   else
-    set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
-    let g:SeeWhiteSpace=0
+    set list
   endif
-  set list
 endfunc
 nnoremap <silent> <C-w> :call ToggleWhiteSpaceChars()<cr>
 execute ToggleWhiteSpaceChars()
 
 "Toggle relative number
 function! ToggleNumber()
-  if(&relativenumber == 1)
+  if &relativenumber == 1
     set norelativenumber
-    set number
   else
     set relativenumber
-    set nonumber
   endif
 endfunc
-nnoremap <C-n> :call ToggleNumber()<cr>
+nnoremap <silent> <C-n> :call ToggleNumber()<cr>
 
 "Beeping
 set noeb
