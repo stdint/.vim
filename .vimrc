@@ -9,7 +9,7 @@ set hidden
 set wildmenu
 set background=dark
 set ruler
-set nonumber
+set number
 set relativenumber
 set hlsearch
 set incsearch
