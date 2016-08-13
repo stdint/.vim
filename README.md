@@ -9,3 +9,4 @@ My vim settings.
 - vim-misc
 - vim-notes
 - ctrl-p
+- surround.vim
