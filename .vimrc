@@ -63,13 +63,18 @@ command Q q
 let mapleader = ","
 nnoremap ; :
 nnoremap : ;
+"Folding
+"TODO need to make it better
+set foldmethod=manual
+nnoremap <silent> f za
+vnoremap <silent> f zf
 "Shortcut to go to next tab
 nnoremap <silent> <tab> :tabnext<cr>
 nnoremap <silent> <s-tab> :tabNext<cr>
 "Shortcut to edit .vimrc
 nnoremap <silent> <leader>ev :e ~/.vim/.vimrc<cr>
 nnoremap <silent> <leader>sv :source ~/.vim/.vimrc<cr>
-" Turn off highlight
+"Turn off highlight
 nnoremap <silent> <leader>h :noh<cr>
 
 "Insert mode map
@@ -79,8 +84,18 @@ inoremap <silent> _ -
 "Plugin settings
 let g:CommandTMaxHeight = 10
 let g:CommandTInputDebounce = 200
-" Enable neocomplete
+" neocomplete
 let g:neocomplete#enable_at_startup = 1
+let g:neocomplete#enable_smart_case = 1
+inoremap <expr><BS> neocomplete#smart_close_popup(). "\<C-h>"
+inoremap <expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr><Space> pumvisible() ? "\<C-v>\<Space>" : "\<Space>"
+" Enable omni completion.⏎
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS⏎
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags⏎
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS⏎
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete⏎
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags"
 
 "Plugin alias
 "NerdTree
