@@ -64,11 +64,13 @@ let mapleader=","
 nnoremap ; :
 nnoremap : ;
 "Shortcut to go to next tab
-nnoremap <silent> <tab> :tabnext<CR>
-nnoremap <silent> <s-tab> :tabNext<CR>
+nnoremap <silent> <tab> :tabnext<cr>
+nnoremap <silent> <s-tab> :tabNext<cr>
 "Shortcut to edit .vimrc
-nnoremap <silent> <leader>ev :e ~/.vim/.vimrc<CR>
-nnoremap <silent> <leader>sv :source ~/.vim/.vimrc<CR>
+nnoremap <silent> <leader>ev :e ~/.vim/.vimrc<cr>
+nnoremap <silent> <leader>sv :source ~/.vim/.vimrc<cr>
+" Turn off highlight
+nnoremap <silent> <leader>h :noh<cr>
 
 "Insert mode map
 inoremap <silent> - _
