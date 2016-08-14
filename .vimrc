@@ -60,7 +60,7 @@ command W wa
 command Q q
 
 "Alias
-let mapleader=","
+let mapleader = ","
 nnoremap ; :
 nnoremap : ;
 "Shortcut to go to next tab
@@ -77,8 +77,10 @@ inoremap <silent> - _
 inoremap <silent> _ -
 
 "Plugin settings
-let g:CommandTMaxHeight=10
-let g:CommandTInputDebounce=200
+let g:CommandTMaxHeight = 10
+let g:CommandTInputDebounce = 200
+" Enable neocomplete
+let g:neocomplete#enable_at_startup = 1
 
 "Plugin alias
 "NerdTree

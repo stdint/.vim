@@ -1,5 +1,6 @@
 - ctrlp
 - delimitMate
+- neocomplete
 - nerdcommenter
 - nerdtree
 - tagbar
