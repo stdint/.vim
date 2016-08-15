@@ -27,7 +27,7 @@ function! ToggleWhiteSpaceChars()
     set list
   endif
 endfunc
-nnoremap <silent> <C-w> :call ToggleWhiteSpaceChars()<cr>
+nnoremap <silent> <F9> :call ToggleWhiteSpaceChars()<cr>
 execute ToggleWhiteSpaceChars()
 
 "Toggle relative number
