@@ -66,8 +66,8 @@ nnoremap : ;
 "Folding
 "TODO need to make it better
 set foldmethod=manual
-nnoremap <silent> f za
-vnoremap <silent> f zf
+nnoremap <silent> <leader>f za
+vnoremap <silent> <leader>f zf
 "Shortcut to go to next tab
 nnoremap <silent> <tab> :tabnext<cr>
 nnoremap <silent> <s-tab> :tabNext<cr>
