@@ -96,6 +96,12 @@ autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags⏎
 autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS⏎
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete⏎
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags"
+" Syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 
 "Plugin alias
 "NerdTree

@@ -3,6 +3,7 @@
 - neocomplete
 - nerdcommenter
 - nerdtree
+- syntastic
 - tagbar
 - vim-airline
 - vim-misc
