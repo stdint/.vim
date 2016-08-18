@@ -77,10 +77,6 @@ nnoremap <silent> <leader>sv :source ~/.vim/.vimrc<cr>
 "Turn off highlight
 nnoremap <silent> <leader>h :noh<cr>
 
-"Insert mode map
-inoremap <silent> - _
-inoremap <silent> _ -
-
 "Plugin settings
 let g:CommandTMaxHeight = 10
 let g:CommandTInputDebounce = 200
@@ -99,7 +95,7 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags"
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 
