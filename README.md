@@ -6,6 +6,7 @@
 - syntastic
 - tagbar
 - vim-airline
+- vim-colors-solarized
 - vim-misc
 - vim-notes
 - vim-surround

@@ -1,13 +1,17 @@
 execute pathogen#infect()
 filetype plugin indent on
 
+syntax enable
+"Colors
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
+call togglebg#map("<F5>")
 "General settings
-syntax on
 set nocompatible
 set noswapfile
 set hidden
 set wildmenu
-set background=dark
 set ruler
 set number
 set relativenumber
@@ -17,6 +21,9 @@ set ignorecase
 set smartcase
 set cursorline
 highlight LineNr ctermfg=grey
+set noeb
+set vb
+set mouse=a
 
 "Toggle white space characters
 set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
