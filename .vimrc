@@ -4,9 +4,7 @@ filetype plugin indent on
 syntax enable
 "Colors
 set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
-call togglebg#map("<F5>")
+colorscheme molokai
 "General settings
 set nocompatible
 set noswapfile
