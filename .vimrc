@@ -19,9 +19,17 @@ set ignorecase
 set smartcase
 set cursorline
 highlight LineNr ctermfg=grey
+"Beeping
 set noeb
 set vb
+"Enable mouse use in all modes
 set mouse=a
+
+" Movements
+nnoremap <silent> k gk
+nnoremap <silent> j gj
+nnoremap <silent> 0 g0
+nnoremap <silent> $ g$
 
 "Toggle white space characters
 set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
@@ -44,13 +52,6 @@ function! ToggleNumber()
   endif
 endfunc
 nnoremap <silent> <C-n> :call ToggleNumber()<cr>
-
-"Beeping
-set noeb
-set vb
-
-"Enable mouse use in all modes
-set mouse=a
 
 "Indentation settings
 set copyindent
