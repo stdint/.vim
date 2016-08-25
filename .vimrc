@@ -11,8 +11,6 @@ set noswapfile
 set hidden
 set wildmenu
 set ruler
-set number
-set relativenumber
 set hlsearch
 set incsearch
 set ignorecase
@@ -41,7 +39,6 @@ function! ToggleWhiteSpaceChars()
   endif
 endfunc
 nnoremap <silent> <F9> :call ToggleWhiteSpaceChars()<cr>
-execute ToggleWhiteSpaceChars()
 
 "Toggle relative number
 function! ToggleNumber()
@@ -52,6 +49,23 @@ function! ToggleNumber()
   endif
 endfunc
 nnoremap <silent> <C-n> :call ToggleNumber()<cr>
+
+let g:richformat = 1
+function! ToggleRichFormatForEasyCopy()
+  if g:richformat == 1
+    set list
+    set nu
+    set relativenumber
+    let g:richformat = 0
+  else
+    set nolist
+    set nonu
+    set norelativenumber
+    let g:richformat = 1
+  endif
+endfunc
+nnoremap <silent> <F10> :call ToggleRichFormatForEasyCopy()<cr>
+execute ToggleRichFormatForEasyCopy()
 
 "Indentation settings
 set copyindent
