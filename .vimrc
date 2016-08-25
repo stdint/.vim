@@ -22,6 +22,8 @@ set noeb
 set vb
 "Enable mouse use in all modes
 set mouse=a
+"Tags exploration
+set tags=./tags;
 
 " Movements
 nnoremap <silent> k gk
