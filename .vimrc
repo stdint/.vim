@@ -30,10 +30,10 @@ nnoremap <silent> k gk
 nnoremap <silent> j gj
 nnoremap <silent> 0 g0
 nnoremap <silent> $ g$
-cnoremap <silent> <C-k> <Up>
-cnoremap <silent> <C-j> <Down>
-cnoremap <silent> <C-h> <Left>
-cnoremap <silent> <C-;> <Right>
+cnoremap <C-k> <Up>
+cnoremap <C-j> <Down>
+cnoremap <C-h> <Left>
+cnoremap <C-l> <Right>
 
 "Toggle white space characters
 set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
