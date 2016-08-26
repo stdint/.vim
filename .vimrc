@@ -104,8 +104,6 @@ nnoremap <silent> <leader>sv :source ~/.vim/.vimrc<cr>
 nnoremap <silent> <leader>h :noh<cr>
 
 "Plugin settings
-let g:CommandTMaxHeight = 10
-let g:CommandTInputDebounce = 200
 " neocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
