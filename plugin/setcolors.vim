@@ -5,7 +5,7 @@ endif
 let loaded_setcolors = 1
 let s:mycolors = []
 " Currently only exploring colorscheme
-let s:colorlistcommand=system("ls ~/.vim/bundle/colorschemes/colors/ | sed 's/.vim//; s/.*/let s:mycolors=s:mycolors+[\"&\"]/'")
+let s:colorlistcommand=system("ls ~/.vim/bundle/colorschemes/colors/ | sed 's/\.vim$//; s/.*/let s:mycolors=s:mycolors+[\"&\"]/'")
 execute s:colorlistcommand
 
 function! NextColor(method)
