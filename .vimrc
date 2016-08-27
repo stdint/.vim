@@ -5,6 +5,9 @@ syntax enable
 "Colors
 set background=dark
 colorscheme molokai
+" Currently only implemented the incremental way
+nnoremap <F8> :call NextColor(1)<CR>
+
 "General settings
 set nocompatible
 set noswapfile
