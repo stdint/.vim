@@ -94,27 +94,7 @@ function! s:NextColor(how, echo_color)
   endif
 endfunction
 
-nnoremap <F8> :call NextColor(1)<CR>
-nnoremap <S-F8> :call NextColor(-1)<CR>
-nnoremap <A-F8> :call NextColor(0)<CR>
-
-" Set color scheme according to current time of day.
-function! s:HourColor()
-  let hr = str2nr(strftime('%H'))
-  if hr <= 3
-    let i = 0
-  elseif hr <= 7
-    let i = 1
-  elseif hr <= 14
-    let i = 2
-  elseif hr <= 18
-    let i = 3
-  else
-    let i = 4
-  endif
-  let nowcolors = 'elflord morning desert evening pablo'
-  execute 'colorscheme '.split(nowcolors)[i]
-  redraw
-  echo g:colors_name
-endfunction
+"nnoremap <F8> :call NextColor(1)<CR>
+"nnoremap <S-F8> :call NextColor(-1)<CR>
+"nnoremap <A-F8> :call NextColor(0)<CR>
 
