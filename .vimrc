@@ -6,7 +6,8 @@ syntax enable
 set background=dark
 colorscheme molokai
 " Currently only implemented the incremental way
-nnoremap <silent> <F8> :call NextColor(1)<CR>
+nnoremap <silent> <C-c> :call NextColor(0)<CR>
+nnoremap <silent> <C-C> :call NextColor(1)<CR>
 
 "General settings
 set nocompatible

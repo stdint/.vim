@@ -14,11 +14,19 @@ endfunction
 
 " Helper function for NextColor(), allows echoing of the color name to be disabled.
 let s:current = 0
+let s:previous = s:current
 function! s:NextColor(method, echo_color)
-  let s:current = s:current + 1
-  if (s:current == len(s:mycolors))
-    let b:current = 0
+  if (a:method == 0)
+    let s:current = s:current + 1
+  elseif (a:method == 1)
+    let s:current = system("echo $RANDOM")
+    let s:current = s:current%len(s:mycolors)
   endif
+
+  if (s:current == len(s:mycolors))
+    let s:current = 0
+  endif
+  let s:previous = s:current
 
   execute 'colorscheme '.s:mycolors[s:current]
   redraw
