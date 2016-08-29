@@ -15,6 +15,11 @@ endfunction
 " Helper function for NextColor(), allows echoing of the color name to be disabled.
 let s:current = 0
 let s:previous = s:current
+
+function! EchoColor()
+    echo s:mycolors[s:current]
+endfunc
+
 function! s:NextColor(method, echo_color)
   if (a:method == 0)
     let s:current = s:current + 1
