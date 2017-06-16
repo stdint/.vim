@@ -21,6 +21,8 @@ set ignorecase
 set smartcase
 set cursorline
 highlight LineNr ctermfg=grey
+"80 characters setting
+let &colorcolumn=join(range(81,999),",")
 "Beeping
 set noeb
 set vb
