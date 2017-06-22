@@ -129,7 +129,12 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' _std=c++11 _stdlib=libc++'
-
+" ack.vim
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+cnoreabbrev ack Ack!
+nnoremap <Leader>a :Ack!<Space>
 
 "Plugin alias
 "NerdTree
