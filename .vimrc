@@ -141,6 +141,7 @@ nnoremap <Leader>a :Ack!<Space>
 
 "Plugin alias
 "NerdTree
+let NERDTreeShowHidden = 1
 nnoremap <silent> <leader>nt :NERDTreeToggle<CR>
 nnoremap <silent> <leader>nf :NERDTreeFind<CR>
 "Tagbar
