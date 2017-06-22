@@ -41,6 +41,9 @@ cnoremap <C-j> <Down>
 cnoremap <C-h> <Left>
 cnoremap <C-l> <Right>
 
+"Go back to previous buffer
+nnoremap <silent> gb <C-^>
+
 "Toggle white space characters
 set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
 function! ToggleWhiteSpaceChars()
