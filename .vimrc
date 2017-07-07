@@ -137,7 +137,8 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 cnoreabbrev ack Ack!
-nnoremap <Leader>a :Ack!<Space>
+nnoremap <silent> <Leader>a "zyiw:Ack!<Space><C-R><C-W><cr>
+nnoremap <Leader>A :Ack!<Space>
 
 "Plugin alias
 "NerdTree
