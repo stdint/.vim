@@ -1,3 +1,5 @@
+- DoxygenToolkit
+- ack
 - colorschemes
 - ctrlp
 - delimitMate
@@ -9,4 +11,5 @@
 - vim-airline
 - vim-misc
 - vim-notes
+- vim-repeat
 - vim-surround
