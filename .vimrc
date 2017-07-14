@@ -149,3 +149,8 @@ nnoremap <silent> <leader>nf :NERDTreeFind<CR>
 nnoremap <silent> <leader>tb :TagbarToggle<CR>
 "vim-notes
 nmap <silent> <leader>N :Note<CR>
+
+if filereadable("~/.vimrc.local")
+  source ~/.vimrc.local
+endif
+
