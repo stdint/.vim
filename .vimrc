@@ -45,7 +45,7 @@ cnoremap <C-l> <Right>
 nnoremap <silent> gb <C-^>
 
 "Toggle white space characters
-set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+set listchars=tab:␉·,trail:␠,nbsp:⎵
 function! ToggleWhiteSpaceChars()
   if &list == 1
     set nolist
