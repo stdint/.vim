@@ -113,6 +113,26 @@ nnoremap <silent> <leader>sv :source ~/.vim/.vimrc<cr>
 nnoremap <silent> <leader>h :noh<cr>
 
 "Plugin settings
+"Plugged
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree'
+Plug 'majutsushi/tagbar'
+Plug 'Raimondi/delimitMate'
+Plug 'xolox/vim-notes'
+Plug 'xolox/vim-misc'
+Plug 'scrooloose/nerdcommenter'
+Plug 'bling/vim-airline'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-surround'
+Plug 'Shougo/neocomplete.vim'
+Plug 'scrooloose/syntastic'
+Plug 'flazz/vim-colorschemes'
+Plug 'tpope/vim-repeat'
+Plug 'vim-scripts/DoxygenToolkit.vim'
+Plug 'mileszs/ack.vim'
+call plug#end()
+
 " neocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
