@@ -1,4 +1,3 @@
-execute pathogen#infect()
 filetype plugin indent on
 
 syntax enable
@@ -124,6 +123,7 @@ Plug 'xolox/vim-misc'
 Plug 'scrooloose/nerdcommenter'
 Plug 'bling/vim-airline'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/syntastic'
