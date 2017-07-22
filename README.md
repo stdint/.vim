@@ -2,6 +2,7 @@
 - ack.vim
 - ctrlp.vim
 - delimitMate
+- focus.vim
 - neocomplete.vim
 - nerdcommenter
 - nerdtree

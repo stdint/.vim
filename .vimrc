@@ -133,6 +133,7 @@ Plug 'flazz/vim-colorschemes', { 'do': 'rm ~/.vim/bundle/colorschemes; ln -s ~/.
 Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'mileszs/ack.vim'
+Plug 'stdint/focus.vim'
 call plug#end()
 
 " neocomplete
@@ -171,6 +172,9 @@ nnoremap <silent> <leader>nf :NERDTreeFind<CR>
 nnoremap <silent> <leader>tb :TagbarToggle<CR>
 "vim-notes
 nmap <silent> <leader>N :Note<CR>
+"focus.vim
+nnoremap <leader>ff :FocusArchiveFocus<CR>
+nnoremap <leader>fr :FocusRestore<CR>
 
 if filereadable("~/.vimrc.local")
   source ~/.vimrc.local
