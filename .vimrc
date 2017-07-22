@@ -129,7 +129,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/syntastic'
-Plug 'flazz/vim-colorschemes', { 'do': 'ln -s ~/.vim/plugged/vim-colorschemes ~/.vim/bundle/colorschemes'}
+Plug 'flazz/vim-colorschemes', { 'do': 'rm ~/.vim/bundle/colorschemes; ln -s ~/.vim/plugged/vim-colorschemes ~/.vim/bundle/colorschemes'}
 Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'mileszs/ack.vim'

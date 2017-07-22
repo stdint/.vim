@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+vim -c "PlugUpdate! | qa"
 ls plugged | sed 's/^/- /' > README.md

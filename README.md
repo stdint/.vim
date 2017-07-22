@@ -9,6 +9,8 @@
 - tagbar
 - vim-airline
 - vim-colorschemes
+- vim-easymotion
+- vim-fugitive
 - vim-misc
 - vim-notes
 - vim-repeat
