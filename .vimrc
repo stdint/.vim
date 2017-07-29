@@ -133,6 +133,7 @@ Plug 'flazz/vim-colorschemes', { 'do': 'rm ~/.vim/bundle/colorschemes; ln -s ~/.
 Plug 'tpope/vim-repeat'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'mileszs/ack.vim'
+Plug 'fatih/vim-go'
 Plug 'stdint/focus.vim'
 call plug#end()
 

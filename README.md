@@ -12,6 +12,7 @@
 - vim-colorschemes
 - vim-easymotion
 - vim-fugitive
+- vim-go
 - vim-misc
 - vim-notes
 - vim-repeat
