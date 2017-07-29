@@ -22,7 +22,7 @@ set smartcase
 set cursorline
 highlight LineNr ctermfg=grey
 "80 characters setting
-let &colorcolumn=join(range(81,999),",")
+"let &colorcolumn=join(range(81,999),",")
 "Beeping
 set noeb
 set vb
@@ -176,7 +176,7 @@ nmap <silent> <leader>N :Note<CR>
 nnoremap <leader>ff :FocusArchiveFocus<CR>
 nnoremap <leader>fr :FocusRestore<CR>
 
-if filereadable("~/.vimrc.local")
+if filereadable(glob("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
 
