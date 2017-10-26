@@ -180,4 +180,5 @@ nnoremap <leader>fr :FocusRestore<CR>
 if filereadable(glob("~/.vimrc.local"))
   source ~/.vimrc.local
 endif
+silent! so .vimlocal
 
