@@ -135,6 +135,7 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'mileszs/ack.vim'
 Plug 'fatih/vim-go'
 Plug 'stdint/focus.vim'
+Plug 'stdint/guards.vim'
 call plug#end()
 
 " neocomplete
