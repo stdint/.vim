@@ -136,6 +136,7 @@ Plug 'mileszs/ack.vim'
 Plug 'fatih/vim-go'
 Plug 'stdint/focus.vim'
 Plug 'stdint/guards.vim'
+Plug 'junegunn/fzf'
 call plug#end()
 
 " neocomplete
@@ -177,6 +178,8 @@ nmap <silent> <leader>N :Note<CR>
 "focus.vim
 nnoremap <leader>ff :FocusArchiveFocus<CR>
 nnoremap <leader>fr :FocusRestore<CR>
+"fzf
+nnoremap <leader>F :FZF<CR>
 
 if filereadable(glob("~/.vimrc.local"))
   source ~/.vimrc.local

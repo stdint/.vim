@@ -3,6 +3,8 @@
 - ctrlp.vim
 - delimitMate
 - focus.vim
+- fzf
+- guards.vim
 - neocomplete.vim
 - nerdcommenter
 - nerdtree
